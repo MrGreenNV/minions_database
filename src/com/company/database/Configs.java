@@ -15,10 +15,13 @@ public class Configs {
     protected String dbName = "minions_bd";
     protected String dbTimeZone = "serverTimezone=UTC";
 
+    /**
+     * Получение параметров пользователя для подключения к БД
+     * @return - возвращает параметры
+     */
     protected Properties getProps() {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Properties props = new Properties();
-
         try {
 
             System.out.print("Введите логин: ");
@@ -30,7 +33,6 @@ public class Configs {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         return props;
     }
 }

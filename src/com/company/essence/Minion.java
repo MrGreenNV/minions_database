@@ -1,5 +1,8 @@
 package com.company.essence;
 
+/**
+ * Класс миньона
+ */
 public class Minion {
     private String name;
     private int age;

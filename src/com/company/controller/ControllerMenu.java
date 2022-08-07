@@ -58,6 +58,8 @@ public class ControllerMenu {
                             throw new IOException();
                         }
                         showDataMinions(villains_id);
+                        System.out.println();
+                        System.out.println("Для продолжения нажмите Enter...");
                     } catch (IOException e) {
                         System.out.println("Введите целое неотрицательное число!");
                     }
@@ -91,6 +93,8 @@ public class ControllerMenu {
                     }
 
                     addNewMinion(nameMinion, ageMinion, nameTown, nameVillain);
+                    System.out.println();
+                    System.out.println("Для продолжения нажмите Enter...");
 
                 }
                 case 4 -> {
@@ -101,6 +105,9 @@ public class ControllerMenu {
                         villainID = Integer.parseInt(reader.readLine());
 
                         deleteVillain(villainID);
+
+                        System.out.println();
+                        System.out.println("Для продолжения нажмите Enter...");
 
                     } catch (IOException e) {
                         e.printStackTrace();

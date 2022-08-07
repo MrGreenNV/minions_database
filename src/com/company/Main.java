@@ -1,8 +1,10 @@
 package com.company;
 
 import com.company.controller.ControllerMenu;
-import com.company.database.DataBaseHandler;
 
+/**
+ * Основной класс для запуска программы.
+ */
 public class Main {
 
     public static void main(String[] args) {

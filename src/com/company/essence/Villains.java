@@ -1,5 +1,8 @@
 package com.company.essence;
 
+/**
+ * Класс злодея
+ */
 public class Villains {
     private String name;
     private EvilnessFactor evilnessFactor;
